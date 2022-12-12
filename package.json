@@ -1,26 +1,28 @@
 {
-  "name": "CoolEmployees",
+  "name": "team-profile-generator",
   "version": "1.0.0",
-  "description": "OOP",
+  "description": "app to create team profile generator ",
   "main": "index.js",
   "directories": {
-    "lib": "lib",
-    "test": "test"
+    "lib": "lib"
   },
   "scripts": {
-    "test": "jest --verbose test/*"
+    "test": "jest"
   },
   "repository": {
-    "type": "",
-    "url": "git+https://github.com/JamesLJenks/10_OOP-Team-Profile-Generator.git"
+    "type": "git",
+    "url": "git+https://github.com/nicolewallace09/team-profile-generator.git"
   },
-  "author": "",
+  "author": "Nicole Wallace",
   "license": "ISC",
-  "homepage": "https://github.com/JamesLJenks/10_OOP-Team-Profile-Generator",
-  "dependencies": {
-    "inquirer": "^6.3.1"
+  "bugs": {
+    "url": "https://github.com/nicolewallace09/team-profile-generator/issues"
   },
+  "homepage": "https://github.com/nicolewallace09/team-profile-generator#readme",
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^26.0.1"
+  },
+  "dependencies": {
+    "inquirer": "^7.1.0"
   }
 }
