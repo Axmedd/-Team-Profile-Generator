@@ -40,4 +40,4 @@ Run `npm test` to run Jest for tests on constructors.
 
 ## Questions
 
-If you have any questions about this projects, please contact me directly at nicole.elisaw@gmail.com. You can view more of my projects at https://github.com/Axmedd.
+If you have any questions about this projects, please contact me directly at ahmedabdibg@gmail.com You can view more of my projects at https://github.com/Axmedd.
