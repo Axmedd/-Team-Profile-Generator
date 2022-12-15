@@ -15,7 +15,7 @@ const teamArray = [];
 
 // start of manager prompts 
 const addManager = () => {
-    return inquirer.prompt ([
+    retrn inquirer.promt ([
         {
             type: 'input',
             name: 'name',
