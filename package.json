@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicolewallace09/team-profile-generator.git"
+    "url": "git+https://github.com/Axmedd/team-profile-generator.git"
   },
   "author": "Nicole Wallace",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nicolewallace09/team-profile-generator/issues"
+    "url": "https://github.com/Axmedd/team-profile-generator/issues"
   },
-  "homepage": "https://github.com/nicolewallace09/team-profile-generator#readme",
+  "homepage": "https://github.com/Axmedd/team-profile-generator#readme",
   "devDependencies": {
     "jest": "^26.0.1"
   },
