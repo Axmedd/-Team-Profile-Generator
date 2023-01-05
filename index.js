@@ -1,6 +1,6 @@
 // link to page creation
 const generateHTML = require("./src/generateHTML.js");
-212313;
+
 // team profiles
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
@@ -9,6 +9,7 @@ const Intern = require("./lib/Intern");
 // node modules
 const fs = require("fs");
 const inquirer = require("inquirer");
+const { start } = require("repl");
 
 // team array
 const teamArray = [];
@@ -76,7 +77,7 @@ const addManager = () => {
       const manager = new Manager(name, id, email, officeNumber);
 
       teamArray.push(manager);
-      console.log(manager);
+      addEmployee().then((htmlString) => writeFile(htmlString));
     });
 };
 
@@ -184,7 +185,7 @@ const addEmployee = () => {
       if (confirmAddEmployee) {
         return addEmployee(teamArray);
       } else {
-        return teamArray;
+        return generateHTML(teamArray);
       }
     });
 };
@@ -205,14 +206,33 @@ const writeFile = (data) => {
   });
 };
 
-addManager()
-  .then(addEmployee)
-  .then((teamArray) => {
-    return generateHTML(teamArray);
-  })
-  .then((pageHTML) => {
-    return writeFile(pageHTML);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+// addManager()
+//   .then(addEmployee)
+//   .then((teamArray) => {
+//     return generateHTML(teamArray);
+//   })
+//   .then((pageHTML) => {
+//     return writeFile(pageHTML);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+function startApp() {
+  inquirer
+    .prompt({
+      type: "list",
+      name: "task",
+      message: "Welcome What type of employee would you like to create",
+      choices: ["manager", "Exit"],
+    })
+    .then((answers) => {
+      if (answers.task === "manager") {
+        addManager();
+      } else {
+        process.exit();
+      }
+    });
+}
+
+startApp();

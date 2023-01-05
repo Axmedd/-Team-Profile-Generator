@@ -53,7 +53,7 @@ const generateTheManager = function (manager) {
               <div class="card-body">
                   <p class="id">ID: ${manager.id}</p>
                   <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
-                  <p class="office">Office Number: ${manager.officeNumber}</p>
+                  <p class="office">Office Number: ${manager.number}</p>
               </div>
   
           </div>
